@@ -49,7 +49,7 @@
         '<h1>SiklusKu</h1>' +
         '<p class="sp-tag">Belajar Fiqih, Jadi Lebih Dekat dengan Allah</p>' +
       '</div>' +
-      '<div class="sp-muat"><div class="sp-trek"><i></i></div><span>Memuat aplikasi...</span></div>';
+      '<div class="sp-muat"><div class="sp-trek"><i></i></div><span>Memuat aplikasi...</span><span class="sp-kredit">Shofia_shine · WA +62 895-6227-38661</span></div>';
     document.body.appendChild(d);
     var tutup = function(){
       if(d.classList.contains('selesai')) return;

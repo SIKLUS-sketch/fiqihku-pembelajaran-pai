@@ -1018,3 +1018,22 @@ html.tr-tirai::before{animation:iris-buka .6s cubic-bezier(.5,0,.2,1) .05s forwa
 @keyframes balik-k{to{transform:rotateY(-80deg);opacity:0}}
 @keyframes balik-m{from{transform:rotateY(70deg);opacity:0}to{transform:none;opacity:1}}
 @media (prefers-reduced-motion: reduce){html.tr-tirai::before,html.tr-keluar::after{display:none}}
+
+
+/* ===== kredit pembuat & watermark (Shofia_shine) ===== */
+.main{padding-bottom:8px}
+@media (max-width:899px){.main{padding-bottom:8px}}
+.kredit{max-width:var(--lebar);margin:0 auto;padding:18px 18px calc(var(--tinggi-tab) + 22px + env(safe-area-inset-bottom,0px));
+  display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-size:12.5px;color:var(--lembut)}
+.kredit b{color:var(--aksen);font-weight:700}
+.kredit .ik{width:14px;height:14px;vertical-align:-2px}
+.kredit-wa{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;font-weight:600;text-decoration:none;
+  color:var(--aksen);background:var(--hijau-muda);border:1px solid var(--garis)}
+.kredit-wa:hover{filter:brightness(.97)}
+.kredit small{font-size:11px;opacity:.75}
+.wm-sudut{position:fixed;right:12px;bottom:calc(var(--tinggi-tab) + 8px + env(safe-area-inset-bottom,0px));z-index:45;
+  pointer-events:none;user-select:none;font:italic 600 12px/1 var(--serif,Georgia,serif);letter-spacing:.04em;
+  color:var(--aksen);opacity:.55;text-shadow:0 0 6px var(--krem),0 0 2px var(--krem)}
+.auth-kredit{margin:10px 0 0;font-size:12px;line-height:1.6;text-align:center;color:var(--lembut)}
+.auth-kredit b{color:var(--aksen)}
+#splash .sp-kredit{margin-top:2px;font-size:11.5px;font-weight:600;letter-spacing:.02em;color:#fff;opacity:.95;text-shadow:0 1px 4px rgba(60,20,35,.85),0 0 10px rgba(60,20,35,.6)}

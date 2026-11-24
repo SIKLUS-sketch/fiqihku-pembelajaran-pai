@@ -48,6 +48,7 @@ function tampilLogin(pesan = ''){
     </div>
     <p class="kecil" style="text-align:center;margin:14px 0 0">${d ? (Object.keys(bacaAkun()).length ? 'Sudah punya akun? <a href="#" data-auth="ganti">Masuk</a>' : '') : 'Belum punya akun? <a href="#" data-auth="ganti">Daftar</a>'}</p>
     <p class="auth-cat">Akun dan data belajarmu disimpan di browser perangkat ini, tidak dikirim ke server mana pun. Kalau data browser dihapus, akun ikut hilang, dan kata sandi tidak bisa dipulihkan.</p>
+    <p class="auth-kredit">Dibuat oleh <b>${PEMBUAT.nama}</b><br><a href="https://wa.me/${PEMBUAT.wa}" target="_blank" rel="noopener">WA ${PEMBUAT.tampil}</a></p>
   </div></main>`;
   const u = document.getElementById('au-u'); if(u) u.focus();
 }

@@ -50,6 +50,13 @@ const IK = {
 };
 const ik = (n, k = '') => `<svg class="ik ${k}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IK[n]}</svg>`;
 
+/* ========== identitas pembuat (watermark & kontak) ========== */
+const PEMBUAT = {nama:'Shofia_shine', wa:'62895622738661', tampil:'+62 895-6227-38661'};
+const kreditHTML = () => `<footer class="kredit"><span class="kredit-nama">${ik('user')} Dibuat oleh <b>${PEMBUAT.nama}</b></span>
+  <a class="kredit-wa" href="https://wa.me/${PEMBUAT.wa}" target="_blank" rel="noopener" aria-label="Hubungi ${PEMBUAT.nama} lewat WhatsApp">${ik('telepon')} WA ${PEMBUAT.tampil}</a>
+  <small>© SiklusKu · ${PEMBUAT.nama}</small></footer>
+  <div class="wm-sudut" aria-hidden="true">${PEMBUAT.nama}</div>`;
+
 const LOGO = '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 35V21q0-11 13-15 13 4 13 15v14z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><path d="M20 6V2" stroke="#D8B568" stroke-width="2.2" stroke-linecap="round"/><path d="M14 35v-8a6 6 0 0 1 12 0v8" fill="#D8B568"/></svg>';
 
 const ILUS = {
@@ -385,6 +392,7 @@ function pasangShell(aktif){
     <a class="app-avatar" href="${U.profil}" aria-label="Profil">${esc(awal)}</a>
   </div></header>
   <main class="main" id="isi" tabindex="-1"></main>
+  ${kreditHTML()}
   <nav class="tab-bawah" aria-label="Menu utama"><div class="tab-bawah-isi">${tab.map(n => `<a href="${n[1]}" class="${n[0] === tabAktif ? 'aktif' : ''}" ${n[0] === tabAktif ? 'aria-current="page"' : ''}>${ik(n[3])}<span>${n[2]}</span></a>`).join('')}</div></nav>`;
 }
 function tutupMenu(){ const a = $('#side'), b = $('#scrim'); if(a) a.classList.remove('buka'); if(b) b.classList.remove('buka'); }
