@@ -224,3 +224,12 @@ const SOAL = {
   {q:'Bagi orang yang wathi’ saat darah haid keluar deras, yang disunnahkan adalah…', o:['bersedekah satu dinar','bersedekah setengah dinar','bersedekah dua dinar','tidak ada kesunnahan apa pun'], e:'Wathi’ saat darah keluar deras: disunnahkan sedekah satu dinar. Saat darah tidak deras: setengah dinar.', m:5, h:'hlm. 49'}
  ]
 };
+
+/* ========== KONTAK KONSULTASI (dipakai halaman konsultasi.html) ========== */
+const KONSULTASI = {
+  jam: 'Hubungi kapan saja, dibalas sesempatnya',
+  catatan: 'Balasan bisa membutuhkan waktu. Untuk kasus mendesak, tanyakan juga ke ustadz atau ustadzah terdekat.',
+  kontak: [
+    {nama: 'Shofia_shine', bidang: 'Konsultasi seputar aplikasi SiklusKu dan materi', nomor: '+62 895-6227-38661'}
+  ]
+};
